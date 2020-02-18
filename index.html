@@ -33,7 +33,7 @@
 
   <section class="form hide">
     <h2>Enter our donor's list!</h2>
-    <form action="/">
+    <form action="/" method="POST">
       <input 
         type="text" 
         name="name"
@@ -57,23 +57,14 @@
     <h2>Last <span>donors</span></h2>
     
     <section class="donors">
+      {% for donor in donors %}
 
-      <div class="donor">
-        <div class="blood-type">AB+</div>
-        <p>Yago Santos</p>
-      </div>
-      <div class="donor">
-        <div class="blood-type">B+</div>
-        <p>Helena Zurg</p>
-      </div>
-      <div class="donor">
-        <div class="blood-type">A+</div>
-        <p>Jessica Ramos</p>
-      </div>
-      <div class="donor">
-        <div class="blood-type">O+</div>
-        <p>Hugo Schutz</p>
-      </div>
+        <div class="donor">
+          <div class="blood-type">{{donor.bloodType}}</div>
+          <p>{{donor.name}}</p>
+        </div>
+
+      {% endfor %}
     </section>
   </main>
 

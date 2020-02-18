@@ -5,10 +5,14 @@ const server = express();
 // Config server to display static files
 server.use(express.static('public'));
 
+// Enable express to take data from the body/form 
+server.use(express.urlencoded({ extended: true }));
+
 // Config template engine
 const nunjucks = require('nunjucks');
 nunjucks.configure('./', {
-  express: server
+  express: server,
+  noCache: true,
 });
 
 // Donors' list
@@ -31,10 +35,19 @@ const donors = [
   }
 ];
 
-
 // Start page configuration
 server.get('/', (req, res) => {
   return res.render('index.html', { donors });
+});
+
+server.post('/', (req, res) => {
+  // Retrive data from form
+  const { name, email, bloodType } = req.body;
+
+  donors.push({ name, bloodType });
+
+  return res.redirect("/");
+
 });
 
 
