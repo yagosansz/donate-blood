@@ -11,16 +11,22 @@
   <!-- page configuration -->
   <!-- Challenge: How to change the page's icon? -->
   <title>Donate Life! Donate Blood.</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <!-- All the content that will be visible/accessible to/by the user -->
   <header>
-    <h1>Donate.</h1>
+    <img 
+      class="logo"
+      src="./logo.png" 
+      alt="Donate blood"
+    >
     <h2>Your donation matters!</h2>
     <p>Save up to 3 lifes with 1 donation</p>
-    <p>Mora than 38,000 donations are needed everyday</p>
-    <p>Only 1.9% of the Canadian population, donates blood</p>
+    <p>Mora than 25,000 donations are needed everyday</p>
+    <p>Only ~3.4% of the Canadian population, donates blood</p>
 
     <button>I want to help</button>
   </header>
@@ -36,7 +42,7 @@
       <input 
         type="text" 
         name="email"
-        placeholder="email"
+        placeholder="E-mail"
       >
     <input 
       type="text" 
@@ -48,7 +54,7 @@
   </section>
 
   <main>
-    <h2>Last donors</h2>
+    <h2>Last <span>donors</span></h2>
     
     <section class="donors">
       <div class="donor">
@@ -57,11 +63,11 @@
       </div>
       <div class="donor">
         <div class="blood-type">B+</div>
-        <p>Mayk Tyler</p>
+        <p>Helena Zurg</p>
       </div>
       <div class="donor">
         <div class="blood-type">A+</div>
-        <p>Steve Ramos</p>
+        <p>Jessica Ramos</p>
       </div>
       <div class="donor">
         <div class="blood-type">O+</div>
