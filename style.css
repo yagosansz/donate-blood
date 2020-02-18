@@ -47,7 +47,7 @@ header button {
 
 .logo {
   width: 120px;
-  margin-top: 70px 0;
+  margin: 70px 0;
 }
 
 header p {
@@ -138,4 +138,17 @@ footer {
   margin-top: auto;
   padding: 16px;
   border: 1px solid #eee;
+}
+
+/* JavaScript functionalities */
+
+section.form {
+  transition: all 200ms;
+}
+
+section.form.hide {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: -70px;
 }
