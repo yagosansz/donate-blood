@@ -28,7 +28,7 @@ header, main, footer {
 
 header, .form, main {
   /* spacing with margin */
-  margin: 0 auto 70px auto;
+  margin: 0 auto 50px auto;
 
   /* specifying elements' limits */
   width: 90%;
@@ -46,8 +46,8 @@ header button {
 }
 
 .logo {
-  width: 120px;
-  margin: 70px 0;
+  width: 180px;
+  margin: 50px 0;
 }
 
 header p {
@@ -55,7 +55,7 @@ header p {
 }
 
 header h1, main h2 {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 
 main h2 span {
@@ -151,5 +151,5 @@ section.form.hide {
   opacity: 0;
   visibility: hidden;
   height: 0;
-  margin-top: -70px;
+  margin-top: -50px;
 }
