@@ -12,6 +12,10 @@ Application to raise awareness about blood donation.
 
 To know more about blood donation, please access: [Blood.ca](https://www.blood.ca/en).
 
+<h1 align="center">
+    <img alt="Donate blood" src="./public/donate.gif" />
+</h1>
+
 ## Getting started
 
 1. Clone this repo using `git clone https://github.com/yagosansz/donate-blood.git`
